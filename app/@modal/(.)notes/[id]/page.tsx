@@ -1,6 +1,6 @@
 import { fetchNoteById } from '@/lib/api';
 import { notFound } from 'next/navigation';
-import NoteModalClient from './NoteModalClient';
+import NoteModalClient from '../NoteModalClient';
 
 type Props = {
   params: { id: string };
