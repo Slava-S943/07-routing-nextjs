@@ -20,6 +20,7 @@ export default function NotePreview({ id }: Props) {
   } = useQuery({
     queryKey: ['note', id],
     queryFn: () => fetchNoteById(id),
+    refetchOnMount: false,
   });
 
   const handleClose = () => {
