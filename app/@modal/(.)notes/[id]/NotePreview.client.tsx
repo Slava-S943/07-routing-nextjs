@@ -11,7 +11,7 @@ type Props = {
   };
 };
 
-export default function NoteModalClient({ note }: Props) {
+export default function NotePreview({ note }: Props) {
   const router = useRouter();
 
   return (

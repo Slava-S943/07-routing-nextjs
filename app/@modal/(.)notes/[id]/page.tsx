@@ -1,6 +1,6 @@
 import { fetchNoteById } from '@/lib/api';
 import { notFound } from 'next/navigation';
-import NoteModalClient from '../NoteModalClient';
+import NotePreview from './NotePreview.client';
 
 type Props = {
   params: { id: string };
@@ -13,5 +13,5 @@ export default async function NoteModal({ params }: Props) {
     notFound();
   }
 
-  return <NoteModalClient note={note} />;
+  return <NotePreview note={note} />;
 }

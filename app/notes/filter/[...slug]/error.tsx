@@ -8,7 +8,7 @@ type ErrorProps = {
 export default function Error({ error, reset }: ErrorProps) {
   return (
     <div>
-      <h2>Something went wrong!</h2>
+      <h2>Failed to load filtered notes</h2>
       <p>{error.message}</p>
 
       <button onClick={() => reset()}>Try again</button>
